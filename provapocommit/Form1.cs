@@ -44,6 +44,17 @@ namespace provapocommit
             string nome = tx_nome.Text;
             string funcao = tx_funcao.Text;
             string salario = tx_salario.Text;
+            string salariofinal = lb_confirm.Text;
+
+            Funcionario f = new Funcionario(matricula, cpf, nome, funcao, salario, salariofinal);
+            lb_confirm.Text = $" SEU SALÁRIO É DE {f.CalcularSalario}";
+
+
+        }
+
+        private void tx_salario_TextChanged(object sender, EventArgs e)
+        {
+
 
         }
     }

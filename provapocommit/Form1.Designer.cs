@@ -44,6 +44,7 @@
             tx_matricula = new MaskedTextBox();
             tx_cancelar = new Button();
             label6 = new Label();
+            lb_confirm = new Label();
             tx_salario = new TextBox();
             SuspendLayout();
             // 
@@ -174,12 +175,22 @@
             label6.TabIndex = 18;
             label6.Text = "Salario: ";
             // 
+            // lb_confirm
+            // 
+            lb_confirm.AutoSize = true;
+            lb_confirm.BackColor = Color.White;
+            lb_confirm.Location = new Point(346, 390);
+            lb_confirm.Name = "lb_confirm";
+            lb_confirm.Size = new Size(10, 15);
+            lb_confirm.TabIndex = 19;
+            lb_confirm.Text = ".";
+            // 
             // tx_salario
             // 
-            tx_salario.Location = new Point(235, 305);
+            tx_salario.Location = new Point(235, 310);
             tx_salario.Name = "tx_salario";
             tx_salario.Size = new Size(121, 23);
-            tx_salario.TabIndex = 19;
+            tx_salario.TabIndex = 20;
             // 
             // Form1
             // 
@@ -188,6 +199,7 @@
             BackColor = Color.RosyBrown;
             ClientSize = new Size(800, 450);
             Controls.Add(tx_salario);
+            Controls.Add(lb_confirm);
             Controls.Add(label6);
             Controls.Add(tx_cancelar);
             Controls.Add(tx_matricula);
@@ -225,6 +237,7 @@
         private MaskedTextBox tx_matricula;
         private Button tx_cancelar;
         private Label label6;
+        private Label lb_confirm;
         private TextBox tx_salario;
     }
 }
